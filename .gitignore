@@ -1,7 +1,6 @@
 loaddefs.el*
 backups/*
 auto-save-list
-custom.el
 *elc
 places
 url/cookies
@@ -15,3 +14,4 @@ oddmuse/*
 .svn
 .DS_Store
 image-dired
+.emacs-project

@@ -169,7 +169,7 @@ project-local-variables.el."
             ((string= parent "/") nil)
             ((string= parent "/..") nil)
             ((file-exists-p (concat file name)) file)
-            (t (plv-find-project-file parent name))))))
+            (t (file-name-directory (plv-find-project-file parent "")))))))
 
 ;; Safe file-local variables
 (dolist (var '(ffip-patterns ffip-find-options
