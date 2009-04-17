@@ -64,5 +64,5 @@
 ;; shell
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 (setq comint-prompt-read-only t)
-(setenv "PAGER" "/usr/bin/emacs")
+(setenv "PAGER" "/bin/cat")
 (setenv "EDITOR" "/usr/bin/emacs")
