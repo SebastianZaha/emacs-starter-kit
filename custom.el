@@ -32,7 +32,7 @@
 (global-set-key "\C-cu"  'uncomment-region)
 
 (color-theme-zenburn)
-(set-face-attribute 'default nil :height 140 :family "Inconsolata")
+(set-face-attribute 'default nil :height 100 :family "Bitstream Vera Sans Mono")
 
 
 ;; Autosave and backup section shamelessly stolen from topfunky
