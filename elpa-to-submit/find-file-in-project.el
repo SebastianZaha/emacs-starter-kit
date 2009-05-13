@@ -82,7 +82,7 @@
 ;;; Code:
 
 (defvar ffip-patterns
-  '("*.rb" "*.html" "*.el" "*.js" "*.rhtml" "*.sql" "*.rjs")
+  '("*.rb" "*.html" "*.el" "*.js" "*.rhtml" "*.sql" "*.rjs", "*.erb", "*.builder", "*.css")
   "List of patterns to look for with find-file-in-project.")
 
 (defvar ffip-find-options

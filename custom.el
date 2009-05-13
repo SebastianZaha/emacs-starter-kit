@@ -32,7 +32,7 @@
 (global-set-key "\C-cu"  'uncomment-region)
 
 (color-theme-zenburn)
-(set-face-attribute 'default nil :height 100 :family "Bitstream Vera Sans Mono")
+(set-face-attribute 'default nil :height 110 :family "Bitstream Vera Sans Mono")
 
 
 ;; Autosave and backup section shamelessly stolen from topfunky
@@ -66,3 +66,12 @@
 (setq comint-prompt-read-only t)
 (setenv "PAGER" "/bin/cat")
 (setenv "EDITOR" "/usr/bin/emacs")
+
+;; javascript mode
+(custom-set-variables
+ '(js2-basic-offset 4)
+ '(js2-indent-on-enter-key t)
+ '(js2-mode-escape-quotes nil)
+ '(js2-mode-squeeze-spaces nil))
+
+(load "custom/ack.el")
