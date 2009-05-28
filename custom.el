@@ -69,9 +69,22 @@
 
 ;; javascript mode
 (custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(js2-basic-offset 4)
  '(js2-indent-on-enter-key t)
+ '(js2-missing-semi-one-line-override t)
  '(js2-mode-escape-quotes nil)
- '(js2-mode-squeeze-spaces nil))
+ '(js2-mode-show-parse-errors nil)
+ '(js2-mode-show-strict-warnings nil)
+ '(js2-mode-squeeze-spaces nil)
+ '(js2-strict-cond-assign-warning nil)
+ '(js2-strict-inconsistent-return-warning nil)
+ '(js2-strict-missing-semi-warning nil)
+ '(js2-strict-trailing-comma-warning nil))
 
 (load "custom/ack.el")
+(setq-default fill-column 160)
+(setq auto-fill-mode 0)
