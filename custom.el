@@ -30,6 +30,7 @@
 (global-set-key "\M-g"   'goto-line)
 (global-set-key "\C-cc"  'comment-region)
 (global-set-key "\C-cu"  'uncomment-region)
+(global-set-key "\C-x/"  'rinari-console)
 
 (color-theme-zenburn)
 (set-face-attribute 'default nil :height 110 :family "Bitstream Vera Sans Mono")
@@ -73,6 +74,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
+ '(ediff-split-window-function (quote split-window-horizontally))
  '(js2-basic-offset 4)
  '(js2-indent-on-enter-key t)
  '(js2-missing-semi-one-line-override t)
@@ -83,8 +85,19 @@
  '(js2-strict-cond-assign-warning nil)
  '(js2-strict-inconsistent-return-warning nil)
  '(js2-strict-missing-semi-warning nil)
- '(js2-strict-trailing-comma-warning nil))
+ '(js2-strict-trailing-comma-warning nil)
+ '(svn-status-verbose nil))
 
-(load "custom/ack.el")
 (setq-default fill-column 160)
 (setq auto-fill-mode 0)
+
+(add-to-list 'load-path "custom/")
+(load "custom/ack.el")
+
+(setq exec-path (append exec-path '("/usr/local/mysql/bin")))
+;; git
+;;(setenv "PATH" (concat (getenv "PATH") ":/usr/local/git/bin:/usr/local/git/libexec/git-core/"))
+;;(setq exec-path (append exec-path '("/usr/local/git/libexec/git-core/")))
+;;(require 'git-emacs)
+
+(require 'php-mode)
