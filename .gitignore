@@ -13,5 +13,10 @@ oddmuse/*
 /#.newsrc-dribble#
 .svn
 .DS_Store
-image-dired
 .emacs-project
+image-dired/
+elim/
+elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc~
+session*
+tramp
+\#*
