@@ -89,8 +89,6 @@
  '(mumamo-background-colors nil)
  '(svn-status-verbose nil))
 
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-
 (setq-default fill-column 160)
 (setq auto-fill-mode 0)
 
